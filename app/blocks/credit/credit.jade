@@ -1,0 +1,25 @@
+mixin credit()
+	+b.credit&attributes(attributes)
+		.container
+			+e.block
+				+b.credit-block
+					+e.info
+						h2.title Рассрочка на ремонт без %
+						+b.credit-block-info
+							+e.pay
+								+b.credit-info-pay
+									+e.H3.title 0 рублей
+									+e.P.text первоначальный взнос
+
+								+b.credit-info-pay
+									+e.H3.title 8 месяцев
+									+e.P.text срок предоставления
+
+							+e.adv
+								p.credit-info-adv-item Наличие только Вашего паспорта
+								p.credit-info-adv-item Оформление в офисе за 20 минут
+
+
+
+					+e.img
+						p.credit-img__text Переплата 0%
