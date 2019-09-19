@@ -1,0 +1,63 @@
+mixin service()
+	+b.service&attributes(attributes)
+		block
+		.container
+			h2.title Вы можете заказать у нас:
+
+			+e.H3.title Цены ниже среднерыночных
+
+			+e.content
+				+b.service-item
+					+e.info
+						+e.img
+							img(src='assets/images/3d1.png' alt='')
+
+						+b.service-info
+							+e.H4.title Комплексные 
+								br
+								| ремонты
+							+e.P.text (подстроимся под Ваш бюджет)
+
+					+e.content
+						+b.service-content
+							+e.H4.title Цены (за 1кв.м.):
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Косметический ремонт комнат
+										+e.P.price от 1490.-
+
+									+e.P.text (входит: демонтаж существующих покрытий; 
+										| поклейка обоев; окраска потолков; укладка ламината; 
+										| монтаж плинтусов)
+
+				+b.service-item
+					+e.info
+						+e.img
+							img(src='assets/images/3d2.png' alt='')
+
+						+b.service-info
+							+e.H4.title Отдельные
+								br
+								| ремонтные работы
+							+e.P.text (Все виды услуг)
+
+					+e.content
+						+b.service-content
+							+e.H4.title Цены (за 1кв.м.):
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Косметический ремонт комнат
+										+e.P.price от 1490.-
+
+									+e.P.text (входит: демонтаж существующих покрытий; 
+										| поклейка обоев; окраска потолков; укладка ламината; 
+										| монтаж плинтусов)
+
+						
+
+					
+

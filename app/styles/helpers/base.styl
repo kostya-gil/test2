@@ -1,0 +1,72 @@
+html
+body
+  overflow-x hidden
+  font-size 16px
+  color #000
+
+h1
+h2
+h3
+h4
+p
+span
+  line-height 1.2
+
+a,
+button
+  cursor pointer
+  border none
+  outline none
+  text-decoration none
+  cursor pointer
+  background transparent
+  display inline-block
+  color #fff
+  line-height 1.2
+
+input,
+button
+  outline none
+  border none
+
+input
+  &::-webkit-input-placeholder
+    color #000
+  &::::-moz-placeholder
+    color #000
+  &:::-moz-placeholder
+    color #000
+  &:::-ms-input-placeholder
+    color #000
+
+img
+  max-width 100%
+  height auto
+  display block
+
+ul
+  margin 0
+  padding 0
+
+.container
+  max-width 1230px
+  margin-left auto
+  margin-right auto
+  position relative
+  padding-x(30px)
+
+.title
+  font 35px 'GPro-B'
+  color rgb(11, 11, 11)
+  position relative
+
+  &:before
+    content ''
+    position absolute
+    left -17px
+    bottom 3px 
+    width 169px
+    height 13px 
+    background-color: rgb(241, 171, 8)
+    z-index -1
+
