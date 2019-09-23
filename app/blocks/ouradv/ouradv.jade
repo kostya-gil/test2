@@ -1,0 +1,47 @@
+mixin ouradv()
+	+b.ouradv&attributes(attributes)
+		.container
+			h2.title Наши преимущества
+
+			+e.content
+				+b.ouradv-item
+					+e.img
+						img(src="assets/images/helmlet1.png", alt="")
+
+					+e.H3.title Строгий 
+						br
+						| подбор рабочих
+
+					+e.UL.list
+						+e.LI.list-item Все рабочие граждане РФ
+						+e.LI.list-item Проходят 2-х недельные курсы
+						+e.LI.list-item Проверяются на нашем спец полигоне
+						+e.LI.list-item Проходят переаттестацию каждые 3 месяца
+
+				+b.ouradv-item
+					+e.img
+						img(src="assets/images/helmlet2.png", alt="")
+
+					+e.H3.title Доставка 
+						br
+						| материалов
+
+					+e.UL.list
+						+e.LI.list-item Цены на материал от производителей
+						+e.LI.list-item Проверенное качество материалов на сотнях объектов
+						+e.LI.list-item Доставка материалов в день обращения
+						+e.LI.list-item Выкуп оставшегося лишнего материала
+
+				+b.ouradv-item
+					+e.img
+						img(src="assets/images/helmlet3.png", alt="")
+
+					+e.H3.title Соблюдение
+						br
+						| сроков
+
+					+e.UL.list
+						+e.LI.list-item Работаем в удобное для Вас время
+						+e.LI.list-item Сроки прописываются в договоре
+						+e.LI.list-item Штрафы за неисполнение сроков
+						+e.LI.list-item Еженедельная сверка сроков

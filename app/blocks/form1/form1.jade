@@ -1,0 +1,25 @@
+mixin form1()
+	+b.form1&attributes(attributes)
+		.container
+			+e.container
+				+b.base-form
+					+e.content
+						+e.H2.title Пригласите 
+							span БЕСПЛАТНО 
+							br
+							| прораба-замерщика и он посчитает
+							br
+							|  Вам смету прямо на объекте 
+							span за 30 мин!
+
+						+e.form
+							form(action='' method='post')
+								input.base-input.name(type="text" name='name' placeholder='Ваше имя')
+								input.base-input.phone(type="tel" name='phone' placeholder='Введите телефон')
+								button.base-btn.y-btn(type='submit')
+									span Пригласить прораба
+
+						+e.P.sign * Оставляя заявку Вы даете
+							| согласие на обработку своих персональных данных. 
+							br
+							| Ваши данные не будут переданы 3м лицам.

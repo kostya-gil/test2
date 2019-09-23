@@ -1,0 +1,26 @@
+mixin form2()
+	+b.form2&attributes(attributes)
+		.container
+			+b.base-form
+				+e.content
+						+e.H2.title 
+							span Получите 
+							| примерный 
+							span расчет ремонта 
+							br
+							| Вашего помещения
+
+						+e.form
+							form(action='' method='post')
+								.form2-wrapper
+									input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
+									input.base-input(type="tel" name='phone' placeholder='Введите телефон')
+									input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
+									input.base-input.phone(type="tel" name='phone' placeholder='Введите телефон')
+								button.base-btn.y-btn(type='submit')
+									span Получить расчет
+
+						+e.P.sign * Оставляя заявку Вы даете
+							| согласие на обработку своих персональных данных. 
+							br
+							| Ваши данные не будут переданы 3м лицам.
