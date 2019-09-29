@@ -1,0 +1,21 @@
+mixin header()
+	+b.HEADER.header&attributes(attributes)
+		.container
+			+e.container
+				+e.A.logo
+					img(src="assets/images/logo.png", alt="")
+
+				+b.NAV.nav 
+					+e.A.link(href='/') Цены
+					+e.A.link(href='/') Наши работы
+					+e.A.link.active(href='/') Мастера
+					+e.A.link(href='/') Калькулятор
+					+e.A.link(href='/') Рассрочка
+					+e.A.link(href='/') Отзывы
+					+e.A.link(href='/') Контакты
+
+				+b.header-info
+					+e.A.phone(href='tel: +73833122872') +7 (383) 312-28-72
+					+e.P.time без выходных 08:00-22:00
+
+ 

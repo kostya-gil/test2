@@ -13,10 +13,14 @@ mixin form2()
 						+e.form
 							form(action='' method='post')
 								.form2-wrapper
-									input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
-									input.base-input(type="tel" name='phone' placeholder='Введите телефон')
-									input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
-									input.base-input.phone(type="tel" name='phone' placeholder='Введите телефон')
+									.base-input-wrapper
+										input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
+									.base-input-wrapper
+										input.base-input(type="tel" name='phone' placeholder='Введите телефон')
+									.base-input-wrapper
+										input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
+									.base-input-wrapper.phone
+										input.base-input(type="tel" name='phone' placeholder='Введите телефон')
 								button.base-btn.y-btn(type='submit')
 									span Получить расчет
 

@@ -1,0 +1,61 @@
+.schema
+	background: #f7f7f7
+	padding-top: 80px
+	padding-bottom: 110px
+
+	&__content
+		margin-top: 50px
+		position relative
+
+	&__line
+		width: 100%
+		position absolute
+		top 0
+		left 0
+		height 514px
+		background: url(../images/schema.png) no-repeat top center
+
+.schema-row
+	padding-top: 50px
+	max-width: 1095px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	margin-bottom: 120px
+
+.schema-row:last-child
+	margin-bottom: 0
+
+.schema-item
+	position: relative
+
+	&__content
+		padding-left: 65px
+
+	&__title
+		font 25px 'GPro-B'
+
+	&__num-back
+		position: absolute
+		top: 0
+		left 0
+		background: #f4b400
+		border-radius: 50%
+		size(48px)
+
+	&__num
+		position absolute
+		top 50%
+		left 50%
+		font 25px 'GPro-Black'
+		color: white
+		transform: translate(-50%, -50%)
+
+	&__text
+		margin-top: 18px
+		margin-bottom: 25px
+		font 16px 'GPro-R'
+		color #646464
+
+.schema-item:last-child
+	left 25px

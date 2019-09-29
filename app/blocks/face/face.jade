@@ -3,20 +3,44 @@ mixin face()
 		.face-content
 			.container
 				+e.content
-					+e.H1.title Ремонт комнаты в Новосибирске от 1490 руб./кв.м
+					+e.H1.title Ремонт комнаты 
+						br
+						| в Новосибирске
+						br
+						| от 1490 руб./кв.м
 					+e.P.text Выезд замерщика в день обращения. 
 						br
 						| Начало работ на следующий день.
 
 				+b.face-advantages
-					+b.face-advantage
+					+b.face-advan
 						+e.img
-							.face-adv-img-outer
-								+b.face-adv-img-inner
-									+e.img
-										img(src='assets/images/001-money.png', alt='')
-		
+							.face-advan-img-outer
+							.face-advan-img-inner
+								img(src='assets/images/001-money.png', alt='')
 						+e.content
 							+e.P.text Без отселения и предоплаты
 
+					+b.face-advan
+						+e.img
+							.face-advan-img-outer
+							.face-advan-img-inner
+								img(src='assets/images/002-clock.png', alt='')
+						+e.content
+							+e.P.text 100% исполнение сроков
 
+					+b.face-advan
+						+e.img
+							.face-advan-img-outer
+							.face-advan-img-inner
+								img(src='assets/images/003-wallpaper.png', alt='')
+						+e.content
+							+e.P.text Материалы по цене производителя
+
+					+b.face-advan
+						+e.img
+							.face-advan-img-outer
+							.face-advan-img-inner
+								img(src='assets/images/004-secure-shield.png', alt='')
+						+e.content
+							+e.P.text 5 уровней защиты клиента

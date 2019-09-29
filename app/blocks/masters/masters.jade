@@ -1,3 +1,33 @@
 mixin masters()
 	+b.masters&attributes(attributes)
-		block
+		.container
+				h2.title Наши мастера
+
+				button.ma-l
+				button.ma-r
+				+e.slider.masters-slider
+					.slider-item
+						+b.master-item
+							+e.img
+								img(src="assets/images/rev.png", alt="")
+
+							+e.content
+								+e.H3.title Александр Васильев
+								+e.H4.sub-title Мастер отделочных работ
+
+								+e.skills
+									+b.master-skill
+										+e.H5.title Направление:
+										+e.P.text Плиточник-гипсокартонщик
+
+									+b.master-skill
+										+e.H5.title Навыки:
+										+e.P.text Монтаж гипсокартона, грунтовка и шпаклёвка гипсокартона, окраска, кладка кафельной плитки, прочие работы.
+
+									+b.master-skill
+										+e.H5.title Опыт:
+										+e.P.text В компании 5 лет
+
+								+e.P.sign «Качественный ремонт в вашем доме – наша ответственность»
+
+

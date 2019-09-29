@@ -11,19 +11,33 @@ include /blocks/examples/examples
 include /blocks/actions/actions
 include /blocks/video/video
 include /blocks/linfo/linfo
+include /blocks/map/map
+include /blocks/schema/schema
+include /blocks/masters/masters
+include /blocks/control/control
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/principles/principles
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
 
 block content
+	+header
 	+face
+	+form1
 	+service
 	+credit
-	+feedback
-	+form1
-	+form2
+	+masters
+	+control
 	+ouradv
 	+examples
-	+actions
+	+form2
 	+video
+	+principles
 	+linfo
+	+schema
+	+actions
+	+feedback
+	+map
+	+footer

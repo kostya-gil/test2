@@ -14,8 +14,10 @@ mixin form1()
 
 						+e.form
 							form(action='' method='post')
-								input.base-input.name(type="text" name='name' placeholder='Ваше имя')
-								input.base-input.phone(type="tel" name='phone' placeholder='Введите телефон')
+								.base-input-wrapper.name
+									input.base-input(type="text" name='name' placeholder='Ваше имя')
+								.base-input-wrapper.phone
+									input.base-input(type="tel" name='phone' placeholder='Введите телефон')
 								button.base-btn.y-btn(type='submit')
 									span Пригласить прораба
 

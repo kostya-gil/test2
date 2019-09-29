@@ -1,3 +1,27 @@
 mixin map()
 	+b.map&attributes(attributes)
-		block
+		.container
+			+e.container
+				+b.map-info
+					h2.title Наши координаты
+					+e.content
+						+b.map-item
+							+e.img
+							+e.H3.title Адрес главного офиса: 
+							+e.P.text г.Новосибирск, м.Площадь Гарина-Михайловского
+								br
+								| Комсомольский пр-т 24, этаж 7, офис 16
+
+						+b.map-item
+							+e.img
+							+e.H3.title Адрес главного офиса: 
+							+e.A.text(href='tel: +73833122872') +7 (383) 312-28-72
+
+						+b.map-item
+							+e.img
+							+e.H3.title Адрес главного офиса: 
+							+e.A.text(href='mailto:novosib@studia-remontov.ru') novosib@studia-remontov.ru
+
+	
+				+b.map-img
+	
