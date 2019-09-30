@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 14" width="19" height="14">
+	<defs>
+		<image width="19" height="14" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAOCAYAAADNGCeJAAABF0lEQVQ4T62Tv0rEQBDGv9nsBg4UTlSwstbaXutAkm5bC8E/hWB5cK34DnL4BrHIK+hDePgOFgHFhCRmZMC1kMTsidMsy3zf71uYHcJXWWvXmqbZqut6qpSaAgiIaN313cnMrwA+uq4rwjAsjDEvWZa9SZ+iKNrWWmcAjn4aV7g/aq0tJUlyC+B8BeOQ9E5gTwD2BxQsr/cMehbYO4BJn4GZD4joDMAJADMCrQQm6b0VBMFGnudFHMe7RDQfg3rBXJJAlVLXzHzcl+4Ns9ZOqqqSQc0A7PwJZoxpy7K8JKKrIYgD/zoAADcALgBseky0FNgSwJ6HeEyypDRNF8x8Oqb06C/cOt0DOPQwDEke2ra137/7Pxb9E8JEbdlckyGfAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="004-youtube-symbol" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
+</svg>

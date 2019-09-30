@@ -1,2 +1,47 @@
 .footer
-	display block
+	background: #242424
+	padding-top 60px
+	padding-bottom 50px
+
+	&__logo
+		width 190px
+
+	&__btn
+		width: 220px
+
+		span
+			width: 100%
+			transform: translate(-50%, -35%)
+
+.footer a
+	color white
+
+	&:hover
+		color #c3baba
+
+.footer-info
+	margin-top: 20px
+	text-align: center
+
+	&__item
+		margin-top 5px
+		font 14px 'GPro-R'
+		color #7a7a7a
+
+.footer-social
+	width 200px
+	margin-x(auto)
+	margin-top  40px
+
+	&__item
+		margin-right 15px
+		display: inline-block
+		vertical-align middle
+		fill #464646
+		transition all .3s ease
+
+	&:hover
+		fill #f6bb00
+
+	&__item:last-child
+		margin-right 0

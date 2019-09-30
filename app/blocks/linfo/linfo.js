@@ -9,6 +9,22 @@ export default function linfo() {
 		slidesToShow: 4,
 		slidesToScroll: 1,
 		prevArrow: $('.lia-l'),
-		nextArrow: $('.lia-r')
+		nextArrow: $('.lia-r'),
+		responsive: [
+		{
+			breakpoint: 800,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			}
+		},
+		{
+			breakpoint: 400,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		]
 	});
 }

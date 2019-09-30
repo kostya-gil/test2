@@ -8,6 +8,7 @@
 		justify-content space-between
 
 .video-item
+	margin-x(15px)
 	max-width 525px
 	width 100%
 
@@ -37,3 +38,15 @@
 	&__text.desc
 		margin-top: 17px
 		color #7c7c7c
+
++below(790px)
+	.video
+		padding-bottom: 30px
+
+	.video__content
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.video-item
+		margin-bottom 60px

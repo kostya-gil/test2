@@ -44,7 +44,7 @@
 
 	&__text
 		margin-top 15px
-		font-size: 18px 'GPro-M'
+		font: 18px 'GPro-M'
 		color #0b0b0b
 
 .credit-info-adv-item
@@ -71,3 +71,49 @@
 	text-align center
 	color #fefefe
 	font 45px 'GPro-Black'
+
++below(1160px)
+	.credit-block__info
+		.title
+			font-size 28px
+
+	.credit-info-pay__title
+		font-size: 34px
+
++below(996px)
+	.credit-block-info__pay
+		flex-direction column
+		justify-content: center
+		align-items: center
+
+	.credit-info-pay
+		margin-bottom 15px
+
+	.credit-info-pay__text
+		margin-top: 7px
+
++below(776px)
+	.credit-block
+		flex-direction column
+		justify-content center
+		align-items center
+
+		&__info
+			order 2
+			padding-y(40px)
+
+		&__img
+			padding-top 40px
+			background: none
+			height: auto
+			order 1
+
+	.credit-img__text
+		color black
+		border-bottom 1px solid black
+
+	.credit-info-adv-item
+		display: inline-block
+
+		&:before
+			top -3px

@@ -7,9 +7,9 @@
 			content none
 
 	&__title
-		span 
+		span
 			color #f1ab08
-	
+
 	&__text
 		margin-top 30px
 		color #979797
@@ -31,6 +31,7 @@
 	padding-left: 35px
 	position: relative
 	margin-bottom 30px
+	text-align left
 
 	&:before
 		content ''
@@ -39,7 +40,7 @@
 		left 0
 		size(20px)
 		background: url(../images/check.png) no-repeat
- 
+
 	&__title
 		font 25px 'GPro-M'
 
@@ -47,5 +48,18 @@
 		margin-top 15px
 		font 16px 'GPro-R'
 		color #848484
-	
+
+
++below(1340px)
+	.control-level
+		background-position-x: 0
+
++below(790px)
+	.control-level
+		background: #e7f0f5
+		height auto
+		padding-bottom 30px
+
+	.control-level-item__title
+		font-size 21px
 

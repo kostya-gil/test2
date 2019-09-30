@@ -4,7 +4,7 @@
 
 	.container
 		height 100%
-	
+
 .form1__container
 	display flex
 	height 100%
@@ -24,6 +24,7 @@
 	display flex
 
 	&__content
+		padding-x(10px)
 		margin auto
 		max-width 570px
 		width 100%
@@ -33,10 +34,11 @@
 		line-height 1.5
 		text-align center
 
-		span 
+		span
 			font 27px 'GPro-B'
 
 	&__form
+		padding-x(10px)
 		margin-top 45px
 		width 100%
 		margin-x(auto)
@@ -55,7 +57,7 @@
 
 .base-input
 	border 1px solid rgba(#b4b4b4, 0.3)
-	border-radius 6px 
+	border-radius 6px
 	width 100%
 	height 52px
 	position relative
@@ -82,3 +84,11 @@
 
 .base-input-wrapper.name:before
 	background: url(../images/name.png) no-repeat
+
++below(756px)
+	.base-form
+		&__title
+			font-size 20px
+
+			span
+				font-size 20px

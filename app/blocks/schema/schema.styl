@@ -59,3 +59,22 @@
 
 .schema-item:last-child
 	left 25px
+
++below(1245px)
+	.schema
+		.schema__line
+			display: none
+
+	.schema-row
+		padding-top: 0
+		margin-bottom: 30px
+
++below(900px)
+	.schema-row
+		display block
+		text-align: center
+
+	.schema-item
+		margin-x(auto)
+		max-width: 300px
+		width 100%

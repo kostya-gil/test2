@@ -1,5 +1,5 @@
 .face-wrapper
-	background url(../images/face.png) no-repeat top center 
+	background url(../images/face.png) no-repeat top center
 	height 910px
 
 .face-content
@@ -10,7 +10,7 @@
 		max-width 465px
 		width 100%
 
-	&__title 
+	&__title
 		font 48px 'GPro-Black'
 
 	&__text
@@ -78,3 +78,31 @@
 		top 50%
 		left 50%
 		transform translate(-50%, -50%)
+
++below(1096px)
+	.face-content
+		padding-top 180px
+
+	.face-advantages
+		display inline-flex
+		text-align center
+		flex-wrap wrap
+		justify-content center
+
+	.face-advan
+		margin-x(15px)
+		margin-bottom 60px
+
++below(790px)
+	.title
+		font-size 27px
+
+		&:before
+			height 7px
+
++below(560px)
+	.face-wrapper
+		background: #e9e2d5
+		height auto
+
+

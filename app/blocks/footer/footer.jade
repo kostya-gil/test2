@@ -1,3 +1,39 @@
 mixin footer()
 	+b.FOOTER.footer&attributes(attributes)
 		.container
+			.header__container
+				+e.A.logo
+					img(src="assets/images/logo2.png", alt="")
+
+				+b.NAV.nav
+					+e.A.link(href='/') Цены
+					+e.A.link(href='/') Наши работы
+					+e.A.link.active(href='/') Мастера
+					+e.A.link(href='/') Калькулятор
+					+e.A.link(href='/') Рассрочка
+					+e.A.link(href='/') Отзывы
+					+e.A.link(href='/') Контакты
+
+				+e.A.btn.base-btn.y-btn(href="/")
+					span Обратный звонок
+
+			+b.footer-info
+				+e.P.item © 2019 ООО «Студия Ремонтов»
+				+e.P.item ИНН: 7743152366, ОГРН: 1167746404517
+				+e.P.item Сайт не является публичной офертой и носит информационный характер.
+
+			+b.footer-social
+				+e.item
+					img(src="assets/images/001-vk-social-logotype.svg", alt="")
+
+				+e.item
+					img(src="assets/images/001-vk-social-logotype.svg", alt="")
+
+				+e.item
+					img(src="assets/images/001-vk-social-logotype.svg", alt="")
+
+				+e.item
+					img(src="assets/images/001-vk-social-logotype.svg", alt="")
+
+				+e.item
+					img(src="assets/images/001-vk-social-logotype.svg", alt="")
