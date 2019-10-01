@@ -6,13 +6,13 @@ mixin footer()
 					img(src="assets/images/logo2.png", alt="")
 
 				+b.NAV.nav
-					+e.A.link(href='/') Цены
-					+e.A.link(href='/') Наши работы
-					+e.A.link.active(href='/') Мастера
-					+e.A.link(href='/') Калькулятор
-					+e.A.link(href='/') Рассрочка
-					+e.A.link(href='/') Отзывы
-					+e.A.link(href='/') Контакты
+					+e.A.link(href='#' data-link='service') Цены
+					+e.A.link(href='#' data-link='examples') Наши работы
+					+e.A.link(href='.masters' data-link='masters') Мастера
+					+e.A.link(href='#' data-link='calc') Калькулятор
+					+e.A.link(href='#' data-link='credit') Рассрочка
+					+e.A.link(href='#' data-link='feedback') Отзывы
+					+e.A.link(href='#' data-link='map') Контакты
 
 				+e.A.btn.base-btn.y-btn(href="/")
 					span Обратный звонок

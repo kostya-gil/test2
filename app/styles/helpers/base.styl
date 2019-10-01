@@ -59,6 +59,7 @@ ul
   font 35px 'GPro-B'
   color rgb(11, 11, 11)
   position relative
+  z-index 2
 
   &:before
     content ''
@@ -86,8 +87,8 @@ ul
     position absolute
     top 50%
     left 50%
-    transform translate(-50%, -48%)
-    font 16px 'GPro-M'
+    transform translate(-50%, -43%)
+    font 15px 'GPro-M'
     color white
     line-height 1.5
     text-transform uppercase
@@ -96,19 +97,66 @@ ul
 .y-btn
   box-shadow 0px 5px 0px #e59701
   background rgb(240,162,8)
-  background linear-gradient(0deg, rgba(240,162,8,1) 0%, rgba(241,173,8,1) 97%)
+  background linear-gradient(0deg, rgba(240,162,8,1) 0%, rgb(249, 213, 8))
 
   &:hover
     box-shadow 0px 1px 0px #e59701
 
-.base-btn:hover
-  span
-    transform translate(-50%, -50%)
-
-
 .g-btn
   box-shadow 0px 5px 0px #6b6767
-  background-color #8d8d8d
+  background #8d8d8d
+  background: linear-gradient(0deg, #060606 0%, #989592)
 
   &:hover
     box-shadow 0px 1px 0px #6b6767
+
+.select-input
+	width: 100%
+	position: relative
+	padding-left 0 !important
+	text-align: left
+
+	&:before
+		content ''
+		position: absolute
+		top 50%
+		right 20px
+		transform translate(0, -50%)
+		width: 13px
+		height 7px
+		background: url(../images/da.png) no-repeat top center
+		z-index 100
+
+	span
+		padding-left: 22px
+		display block
+		width 100%
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -43%)
+		font 16px 'GPro-R'
+		color black
+
+	.chosen-container
+		height 100%
+
+	.chosen-container-single
+		.chosen-single
+			border none
+			height 100%
+			border-radius 6px
+			width 100%
+			background: white
+
+	.chosen-container
+		.chosen-drop
+			border 1px solid rgba(#b4b4b4, 0.3)
+
+	.chosen-container
+		.chosen-results li.highlighted
+				background: #e59701
+
+		.chosen-results
+			span
+				display none

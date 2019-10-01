@@ -1,2 +1,170 @@
 .calc
-	display block
+	padding-y(105px)
+	background: #f9cf07
+	background-image: linear-gradient(61deg, #f9cf07 0%, #ef9d07 98%)
+
+.calc-img
+	position: absolute
+	width: 478px
+	height 487px
+	top 50px
+	right 0
+	background: url(../images/calc.png) no-repeat top center
+
+.calc-form
+	max-width 819px
+	width: 100%
+	border-radius 6px
+	padding-x(15px)
+	background-color #ffffff
+
+	&__top-part
+		padding-top 57px
+		max-width: 691px
+		width: 100%
+		margin-x(auto)
+
+	&__title
+		font 35px 'GPro-B'
+		color: #0b0b0b
+
+	&__type
+		margin-top 35px
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__content-top
+		margin-top 45px
+		display none
+
+	&__content-top.active
+		display: block
+
+	&__fields
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap wrap
+
+		.base-input
+			max-width 320px
+			width: 100%
+			margin-bottom 18px
+
+	&__sign
+		max-width 320px
+		width: 100%
+		font 14px 'GPro-M'
+		color: #8d8d8d
+		line-height: 1.5
+
+		span
+			color #0b0b0b
+
+	&__content
+		background-color #fbfbfb
+
+	&__content-bottom
+		display none
+		margin-top 35px
+
+	&__content-bottom.active
+		display block
+
+	&__bottom-part
+		padding-top 40px
+		max-width: 691px
+		width: 100%
+		margin-x(auto)
+
+	&__prices
+	&__form
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+
+	&__form
+		margin-top 30px
+		padding-bottom 40px
+		max-width: 691px
+		width: 100%
+		margin-x(auto)
+
+
+.type-btn
+	width 195px
+	height 54px
+	background: white
+	border 1px solid #c3bebe
+	box-shadow: none
+
+	span
+		transform translate(-50%, -42%);
+		color black
+
+.type-btn.active
+	border none
+	box-shadow: 0px 5px 0px #e59701
+	background: #f0a208
+	background linear-gradient(0deg, rgba(240,162,8,1) 0%, rgb(249, 213, 8))
+
+	span
+		color white
+
+.calc-input
+	max-width: 319px
+	width: 100%
+	height 63px
+
+	input
+		height 100%
+
+	span
+		width: 100%
+
+.type-price
+	&__title
+		font 22px 'GPro-R'
+		color: #0b0b0b
+		line-height: 1.3
+
+	&__price
+		margin-top 15px
+		color: #f1ab08
+		font 33px 'GPro-B'
+
++below(1210px)
+	.calc-img
+		display: none
+
+	.calc-form
+		margin-x(auto)
+
++below(728px)
+	.calc-form
+		text-align: center
+
+		&__type
+		&__prices
+		&__form
+			flex-direction: column
+			justify-content: center
+			align-items: center
+
+		&__fields
+			justify-content: center
+			align-items: center
+
+	.type-btn
+		margin-y(10px)
+
+	.type-price
+		margin-y(10px)
+
+		&__title
+			font-size 16px
+
+		&__price
+			font-size 22px
+			margin-top 7px

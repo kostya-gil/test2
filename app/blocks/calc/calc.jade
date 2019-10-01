@@ -1,3 +1,162 @@
 mixin calc()
 	+b.calc&attributes(attributes)
-		block
+		.container
+			.calc-img
+			+b.calc-form
+				+e.top-part
+					+e.H2.title Калькулятор ремонта
+
+					+e.type
+						a.base-btn.type-btn.active(href="#" data-type='room')
+							span Комната
+
+						a.base-btn.type-btn(href="#" data-type='flat')
+							span Квартира
+
+						a.base-btn.type-btn(href="#" data-type='newbuild')
+							span Новостройка
+
+					+e.content-top.active(data-type='room')
+						+e.fields
+							.calc-input.select-input.base-input
+								select.base-input.select(data-placeholder='Жилая комнтата')
+									option(value='Жилая комнтата') Жилая комнтата
+									option(value='Жилая комнтата 2') Жилая комнтата  2
+									option(value='Жилая комнтата 3') Жилая комнтата 3
+							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
+
+							.calc-input.select-input.base-input
+								select.base-input.select(data-placeholder='Косметический ремонт')
+									option(value='Косметический ремонт 1') Косметический ремонт
+									option(value='Косметический ремонт 2') Косметический ремонт 2
+									option(value='Косметический ремонт 3') Косметический ремонт 4
+
+							+e.P.sign
+								span Косметический ремонт
+								| - ремонт, предполагающий выполнение
+								| демонтажных и чистовых работ помещения
+								| (без выравнивания стен).
+
+					+e.content-top(data-type='flat')
+						+e.fields
+							.calc-input.select-input.base-input
+								select.base-input.select(data-placeholder='Жилая комнтата')
+									option(value='Жилая комнтата') Жилая комнтата
+									option(value='Жилая комнтата 2') Жилая комнтата  2
+									option(value='Жилая комнтата 3') Жилая комнтата 3
+							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
+
+							.calc-input.select-input.base-input
+								select.base-input.select(data-placeholder='Косметический ремонт')
+									option(value='Косметический ремонт 1') Косметический ремонт
+									option(value='Косметический ремонт 2') Косметический ремонт 2
+									option(value='Косметический ремонт 3') Косметический ремонт 4
+
+							+e.P.sign
+								span Косметический ремонт
+								| - ремонт, предполагающий выполнение
+								| демонтажных и чистовых работ помещения
+								| (без выравнивания стен).
+
+					+e.content-top(data-type='newbuild')
+						+e.fields
+							.calc-input.select-input.base-input
+								select.base-input.select(data-placeholder='Жилая комнтата')
+									option(value='Жилая комнтата') Жилая комнтата
+									option(value='Жилая комнтата 2') Жилая комнтата  2
+									option(value='Жилая комнтата 3') Жилая комнтата 3
+							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
+
+							.calc-input.select-input.base-input
+								select.base-input.select(data-placeholder='Косметический ремонт')
+									option(value='Косметический ремонт 1') Косметический ремонт
+									option(value='Косметический ремонт 2') Косметический ремонт 2
+									option(value='Косметический ремонт 3') Косметический ремонт 4
+
+							+e.P.sign
+								span Косметический ремонт
+								| - ремонт, предполагающий выполнение
+								| демонтажных и чистовых работ помещения
+								| (без выравнивания стен).
+
+				+e.content
+					+e.content-bottom.active(data-type='room')
+						+e.bottom-part
+							+e.prices
+								+b.type-price
+									+e.H4.title Стоимость
+										br
+										| ремонта:
+
+									+e.P.price 17 880.-
+
+								+b.type-price
+									+e.H4.title Стоимость черновых
+										br
+										| материалов:
+
+									+e.P.price 1 073.-
+
+								+b.type-price
+									+e.H4.title Примерные
+										br
+										| сроки ремонта:
+
+									+e.P.price 4 дня
+
+					+e.content-bottom(data-type='flat')
+						+e.bottom-part
+							+e.prices
+								+b.type-price
+									+e.H4.title Стоимость
+										br
+										| ремонта:
+
+									+e.P.price 17 880.-
+
+								+b.type-price
+									+e.H4.title Стоимость черновых
+										br
+										| материалов:
+
+									+e.P.price 1 073.-
+
+								+b.type-price
+									+e.H4.title Примерные
+										br
+										| сроки ремонта:
+
+									+e.P.price 4 дня
+
+					+e.content-bottom(data-type='newbuild')
+						+e.bottom-part
+							+e.prices
+								+b.type-price
+									+e.H4.title Стоимость
+										br
+										| ремонта:
+
+									+e.P.price 17 880.-
+
+								+b.type-price
+									+e.H4.title Стоимость черновых
+										br
+										| материалов:
+
+									+e.P.price 1 073.-
+
+								+b.type-price
+									+e.H4.title Примерные
+										br
+										| сроки ремонта:
+
+									+e.P.price 4 дня
+
+					+e.form
+						.calc-input.base-input-wrapper.phone
+							input.base-input(type="tel" name='phone' placeholder='Введите телефон')
+						button.base-btn.y-btn.calc-input(type='submit')
+							span Пригласить специалиста
+
+
+

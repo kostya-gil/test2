@@ -67,6 +67,7 @@
     "babel-runtime": "^6.22.0",
     "bemto.jade": "^1.0.0",
     "browser-sync": "^2.10.0",
+    "chosen-js": "^1.8.7",
     "cross-env": "^1.0.7",
     "debuga": "^1.0.2",
     "eslint": "^2.12.0",
@@ -124,6 +125,7 @@
     "webpack-stream": "^3.1.0"
   },
   "dependencies": {
+    "inputmask": "^4.0.9",
     "slick-carousel": "^1.8.1"
   }
 }

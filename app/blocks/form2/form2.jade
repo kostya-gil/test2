@@ -3,28 +3,37 @@ mixin form2()
 		.container
 			+b.base-form
 				+e.content
-						+e.H2.title 
-							span Получите 
-							| примерный 
-							span расчет ремонта 
+						+e.H2.title
+							span Получите
+							| примерный
+							span расчет ремонта
 							br
 							| Вашего помещения
 
 						+e.form
 							form(action='' method='post')
 								.form2-wrapper
-									.base-input-wrapper
-										input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
-									.base-input-wrapper
-										input.base-input(type="tel" name='phone' placeholder='Введите телефон')
-									.base-input-wrapper
-										input.base-input(type="text" name='mroom' placeholder='Метраж комнаты')
+									.calc-input.select-input.base-input
+										select.base-input.select(data-placeholder='Вид помещения')
+											option(value='Жилая комнтата') Вид помещения 1
+											option(value='Жилая комнтата 2') Вид помещения 2
+											option(value='Жилая комнтата 3') Вид помещения 3
+
+									.calc-input.select-input.base-input
+										select.base-input.select(data-placeholder='Тип ремонта 1')
+											option(value='Жилая комнтата') Тип ремонта 1
+											option(value='Жилая комнтата 2') Тип ремонта 2
+											option(value='Жилая комнтата 3') Тип ремонта 3
+
+									input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
+
 									.base-input-wrapper.phone
 										input.base-input(type="tel" name='phone' placeholder='Введите телефон')
+
 								button.base-btn.y-btn(type='submit')
 									span Получить расчет
 
 						+e.P.sign * Оставляя заявку Вы даете
-							| согласие на обработку своих персональных данных. 
+							| согласие на обработку своих персональных данных.
 							br
 							| Ваши данные не будут переданы 3м лицам.

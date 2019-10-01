@@ -23,6 +23,15 @@ export default function header() {
 		return false;
 	});
 
+	$(document).on('click', '.scrl-btn', function () {
+		$('html, body').animate({
+			scrollTop: $('.' + $(this).attr('data-link')).offset().top - $('.header').outerHeight()
+		}, {
+			duration: 500
+		});
+		return false;
+	});
+
 	$(document).on('click', '.menu-btn', () => {
 		$(this).toggleClass('active');
 		const $contentClass = $('.menu');

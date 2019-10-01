@@ -18,9 +18,11 @@
 		width 190px
 		position: relative
 		z-index 200
+		flex-shrink: 0
 
 .header-info
 	width: 200px
+	flex-shrink: 0
 
 	&__phone
 		position: relative
@@ -103,6 +105,20 @@
 	.line_3
 		top 0
 		transform: rotate(-45deg)
+
++below(1176px)
+	.header__container
+		flex-wrap wrap
+
+	.menu
+		max-width 100%
+		text-align: center
+		margin-top 30px
+		order 3
+
+		.nav
+			display inline-flex
+			max-width 790px
 
 +below(790px)
 	.menu-btn

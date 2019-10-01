@@ -2,7 +2,8 @@
 	display inline-block
 
 .service
-	padding-y(120px)
+	padding-top 120px
+	padding-bottom 80px
 
 	&__title
 		margin-top 18px
@@ -74,6 +75,16 @@
 	&__price
 		font 19px 'GPro-Black'
 		color #f1a208
+		position: relative
+
+	&__price.m
+		&:before
+			content '2';
+			position: absolute
+			right -7px
+			top -7px
+			font-size 12px
+
 
 	&__text
 		max-width 330px
@@ -110,6 +121,9 @@
 
 	.service-item:last-child
 		margin-bottom 0
+
+	.service-btn
+		margin-x(auto)
 
 +below(530px)
 	.service-content
