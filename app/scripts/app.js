@@ -17,6 +17,33 @@ $(() => {
 	header();
 	calc();
 	$('input[type="tel"]').mask('+7(999)999-99-99');
+
+	if ($('#map').length) {
+		var myMap = void 0;
+		var myPlacemark = void 0;
+
+		var init = function init() {
+			myMap = new ymaps.Map('map', {
+				center: [55.03223150391148,82.90751590740966],
+				zoom: 17,
+				controls: ['zoomControl', 'searchControl']
+			});
+
+			myMap.controls.add('zoomControl', { left: 5, top: 5 });
+
+			myPlacemark = new ymaps.Placemark([55.032080523009405,82.90751590740966], {
+				balloonContent: ''
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'assets/images/mark.png',
+				iconImageSize: [37, 51]
+			});
+			myMap.geoObjects.add(myPlacemark);
+			myMap.behaviors.disable('scrollZoom');
+		};
+
+		ymaps.ready(init);
+	}
 });
 
 document.addEventListener('DOMContentLoaded', function () {
