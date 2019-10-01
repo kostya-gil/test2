@@ -40,17 +40,17 @@ mixin calc()
 					+e.content-top(data-type='flat')
 						+e.fields
 							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Жилая комнтата')
-									option(value='Жилая комнтата') Жилая комнтата
-									option(value='Жилая комнтата 2') Жилая комнтата  2
-									option(value='Жилая комнтата 3') Жилая комнтата 3
+								select.base-input.select(data-placeholder='Жилая квартира')
+									option(value='Жилая комнтата') Жилая квартира
+									option(value='Жилая комнтата 2') Жилая квартира  2
+									option(value='Жилая комнтата 3') Жилая квартира 3
 							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
 
 							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Косметический ремонт')
-									option(value='Косметический ремонт 1') Косметический ремонт
-									option(value='Косметический ремонт 2') Косметический ремонт 2
-									option(value='Косметический ремонт 3') Косметический ремонт 4
+								select.base-input.select(data-placeholder='Косметический квартира')
+									option(value='Косметический ремонт 1') Косметический квартира
+									option(value='Косметический ремонт 2') Косметический квартира 2
+									option(value='Косметический ремонт 3') Косметический квартира 4
 
 							+e.P.sign
 								span Косметический ремонт
@@ -61,17 +61,17 @@ mixin calc()
 					+e.content-top(data-type='newbuild')
 						+e.fields
 							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Жилая комнтата')
-									option(value='Жилая комнтата') Жилая комнтата
-									option(value='Жилая комнтата 2') Жилая комнтата  2
-									option(value='Жилая комнтата 3') Жилая комнтата 3
+								select.base-input.select(data-placeholder='Жилая строение')
+									option(value='Жилая комнтата') Жилая строение
+									option(value='Жилая комнтата 2') Жилая кстроение  2
+									option(value='Жилая комнтата 3') Жилая строение 3
 							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
 
 							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Косметический ремонт')
-									option(value='Косметический ремонт 1') Косметический ремонт
-									option(value='Косметический ремонт 2') Косметический ремонт 2
-									option(value='Косметический ремонт 3') Косметический ремонт 4
+								select.base-input.select(data-placeholder='Косметический строение')
+									option(value='Косметический ремонт 1') Косметический строение
+									option(value='Косметический ремонт 2') Косметический строение 2
+									option(value='Косметический ремонт 3') Косметический строение 4
 
 							+e.P.sign
 								span Косметический ремонт
@@ -152,11 +152,13 @@ mixin calc()
 
 									+e.P.price 4 дня
 
-					+e.form
-						.calc-input.base-input-wrapper.phone
-							input.base-input(type="tel" name='phone' placeholder='Введите телефон')
-						button.base-btn.y-btn.calc-input(type='submit')
-							span Пригласить специалиста
+					form(action="" method='post')
+						input(type="hidden" name='typecalc' id='typecalc')
+						+e.form
+							.calc-input.base-input-wrapper.phone
+								input.base-input(type="tel" name='phone' placeholder='Введите телефон')
+							button.base-btn.y-btn.calc-input(type='submit')
+								span Пригласить специалиста
 
 
 

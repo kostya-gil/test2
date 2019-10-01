@@ -5,7 +5,7 @@ export default function calc() {
 
 	$(document).on('click', '.type-btn', function () {
 		if ($(this).hasClass('active')) {
-			return;
+			return false;
 		}
 		$btn.removeClass('active');
 		$btn = $(this);
@@ -22,6 +22,9 @@ export default function calc() {
 		}, {
 			duration: 500
 		});
+		$('#typecalc').val($btnType);
+		$('.select').chosen('destroy'); 
+		$(".select").chosen({ width: '100%', no_results_text: 'Нет совпадений' });
 		return false;
 	});
 }
