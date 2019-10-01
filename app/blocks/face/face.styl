@@ -17,6 +17,7 @@
 		margin-top 35px
 		font 18px 'GPro-R'
 		color #878686
+		line-height 1.6
 
 .face-advantages
 	margin-top 150px
@@ -39,12 +40,14 @@
 		box-shadow 0.418px 3.978px 8px rgba(45,45,45,0.02)
 		background-color #ffffff
 		text-align center
-		display flex
 		height 121px
 		padding 10px
 
 	&__text
-		margin auto
+		padding-x(15px)
+		position: absolute
+		top 50%
+		transform: translate(0, -50%)
 		padding-top 2px
 		font 18px 'GPro-M'
 
@@ -91,24 +94,55 @@
 
 	.face-advan
 		margin-x(15px)
-		margin-bottom 60px
+		margin-bottom 70px
 
 +below(790px)
+	.face__title
+		font-size 38px
+
 	.title
 		font-size 27px
 
 		&:before
+			max-width 169px
+			top 20px
 			height 7px
 
 +below(560px)
-	.face-wrapper
-		background: #e9e2d5
-		height auto
+	.face
+		height 1000px
+		background-position: 50% 130%
+
+		&__text
+			margin-top 15px
+
+	.face-content
+		padding-top 150px
 
 	.face-advantages
-		margin-top 80px
+		margin-top 70px
 
+		.face-advan
+			width 300px
+			height 83px
 
-+below(400px)
+			&__content
+				height 100%
+
+			&__text
+				padding: 0
+				padding-top 10px
+				width 100%
+				left 0
+				font-size: 14px
+
+	.face
+		text-align: center
+
++below(450px)
 	.face__title
 		font-size: 38px
+
+	.title
+		&:before
+			left -7px !important

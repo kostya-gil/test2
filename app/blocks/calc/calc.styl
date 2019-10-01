@@ -123,6 +123,12 @@
 	span
 		width: 100%
 
+.base-input.calc-input
+	height 56px
+
+.calc-input.ni
+	height 51px
+
 .type-price
 	&__title
 		font 22px 'GPro-R'
@@ -140,6 +146,13 @@
 
 	.calc-form
 		margin-x(auto)
+
++below(790px)
+	.select-input
+		border none !important
+
+		&:before
+			content none
 
 +below(728px)
 	.calc-form
