@@ -61,6 +61,7 @@
 		margin-top 25px
 		max-width 245px
 		width: 100%
+
 		span
 			width 100%
 
@@ -77,6 +78,10 @@
 		margin-bottom: 30px
 
 +below(900px)
+	.schema
+		padding-bottom: 40px
+		text-align: center
+
 	.schema-row
 		flex-direction: column
 		justify-content: center
@@ -85,3 +90,22 @@
 	.schema-item
 		max-width: 300px
 		width 100%
+		margin-bottom 20px
+
+		&__content
+			padding-left: 0
+
+		&__num-back
+			position relative
+			left 50%
+			transform: translate(-50%, 0)
+
+		&__title
+			margin-top 15px
+
+		&__btn
+			margin-top 10px
+			margin-x(auto)
+
+	.schema-item:last-child
+		left 0
