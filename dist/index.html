@@ -28,11 +28,25 @@
 	<body class="page">
 		<header class="header">
 			<div class="container">
-				<div class="header__container"><a class="header__logo"><img src="assets/images/logo.png" alt="" /></a>
-					<nav class="nav"> <a href="/" class="nav__link">Цены</a><a href="/" class="nav__link">Наши
-							работы</a><a href="/" class="nav__link active">Мастера</a><a href="/"
-						 class="nav__link">Калькулятор</a><a href="/" class="nav__link">Рассрочка</a><a href="/"
-						 class="nav__link">Отзывы</a><a href="/" class="nav__link">Контакты</a></nav>
+				<div class="header__container"><a class="header__logo"><img src="assets/images/logo.png"
+						 alt="" /></a><button class="menu-btn">
+						<div class="line line_1"></div>
+						<div class="line line_2"></div>
+						<div class="line line_3"></div>
+					</button>
+					<div class="menu">
+						<nav class="nav"><a href="#" data-link="service" class="nav__link">Цены</a><a href="#"
+							 data-link="examples" class="nav__link">Наши работы</a><a href=".masters"
+							 data-link="masters" class="nav__link">Мастера</a><a href="#" data-link="calc"
+							 class="nav__link">Калькулятор</a><a href="#" data-link="credit"
+							 class="nav__link">Рассрочка</a><a href="#" data-link="feedback"
+							 class="nav__link">Отзывы</a><a href="#" data-link="map" class="nav__link">Контакты</a>
+						</nav>
+						<div class="header-info mob"><a href="tel: +73833122872" class="header-info__phone">+7 (383)
+								312-28-72</a>
+							<p class="header-info__time">без выходных 08:00-22:00</p>
+						</div>
+					</div>
 					<div class="header-info"><a href="tel: +73833122872" class="header-info__phone">+7 (383)
 							312-28-72</a>
 						<p class="header-info__time">без выходных 08:00-22:00</p>
@@ -115,7 +129,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="service">
+		<div id="price" class="service">
 			<div class="container">
 				<h2 class="title">Вы можете заказать у нас:</h2>
 				<h3 class="service__title">Цены ниже среднерыночных</h3>
@@ -124,7 +138,7 @@
 						<div class="service-item__info">
 							<div class="service-item__img"><img src="assets/images/3d1.png" alt="" /></div>
 							<div class="service-info">
-								<h4 class="service-info__title">Комплексные <br />ремонты</h4>
+								<h4 class="service-info__title">Комплексные<br />ремонты</h4>
 								<p class="service-info__text">(подстроимся под Ваш бюджет)</p>
 							</div>
 						</div>
@@ -802,7 +816,8 @@
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<div class="header__container"><a class="footer__logo"><img src="assets/images/logo2.png" alt="" /></a>
+				<div class="header__container footer-container"><a class="footer__logo"><img
+						 src="assets/images/logo2.png" alt="" /></a>
 					<nav class="nav"><a href="/" class="nav__link">Цены</a><a href="/" class="nav__link">Наши
 							работы</a><a href="/" class="nav__link active">Мастера</a><a href="/"
 						 class="nav__link">Калькулятор</a><a href="/" class="nav__link">Рассрочка</a><a href="/"

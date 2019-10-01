@@ -2,20 +2,31 @@ mixin header()
 	+b.HEADER.header&attributes(attributes)
 		.container
 			+e.container
+
 				+e.A.logo
 					img(src="assets/images/logo.png", alt="")
 
-				+b.NAV.nav 
-					+e.A.link(href='/') Цены
-					+e.A.link(href='/') Наши работы
-					+e.A.link.active(href='/') Мастера
-					+e.A.link(href='/') Калькулятор
-					+e.A.link(href='/') Рассрочка
-					+e.A.link(href='/') Отзывы
-					+e.A.link(href='/') Контакты
+				button.menu-btn
+					.line.line_1
+					.line.line_2
+					.line.line_3
+
+				.menu
+					+b.NAV.nav
+						+e.A.link(href='#' data-link='service') Цены
+						+e.A.link(href='#' data-link='examples') Наши работы
+						+e.A.link(href='.masters' data-link='masters') Мастера
+						+e.A.link(href='#' data-link='calc') Калькулятор
+						+e.A.link(href='#' data-link='credit') Рассрочка
+						+e.A.link(href='#' data-link='feedback') Отзывы
+						+e.A.link(href='#' data-link='map') Контакты
+
+					+b.header-info.mob
+						+e.A.phone(href='tel: +73833122872') +7 (383) 312-28-72
+						+e.P.time без выходных 08:00-22:00
 
 				+b.header-info
 					+e.A.phone(href='tel: +73833122872') +7 (383) 312-28-72
 					+e.P.time без выходных 08:00-22:00
 
- 
+

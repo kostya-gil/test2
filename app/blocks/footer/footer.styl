@@ -17,6 +17,7 @@
 	color white
 
 	&:hover
+	&.active
 		color #c3baba
 
 .footer-info
@@ -45,3 +46,12 @@
 
 	&__item:last-child
 		margin-right 0
+
++below(1120px)
+	.footer-container
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.footer__btn
+		margin-y(15px)
