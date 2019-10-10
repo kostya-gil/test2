@@ -20,7 +20,7 @@ mixin service()
 
 					+e.content
 						+b.service-content
-							+e.H4.title Цены (за 1кв.м.):
+							+e.H4.title Цены (за 1 м ):
 
 							+e.item
 								+b.service-content-item
@@ -54,29 +54,6 @@ mixin service()
 										| укладка ламината; монтаж плинтусов.
 										|  ВСЕ МАТЕРИАЛЫ ВКЛЮЧЕНЫ В СТОИМОСТЬ)
 
-							+e.item
-								+b.service-content-item
-									+e.info
-										+e.H4.title Евроремонт комнаты
-										+e.P.price от 5400.-
-
-									+e.P.text (входит: демонтаж существующих покрытий; стяжка пола;
-										| штукатурка стен; выравнивание потолка;
-										|  замена электрики; грунтовка пола, стен и потолка;
-										| шпаклевка стен и потолка; поклейка обоев;
-										| окраска потолков; укладка паркетной доски;
-										| монтаж плинтусов; замена батарей;
-										| влажная уборка помещения)
-
-							+e.item
-								+b.service-content-item
-									+e.info
-										+e.H4.title Ремонт ванной комнаты
-										+e.P.price от 11750.-
-
-									+e.P.text (входит: демонтаж существующих покрытий;
-										| установка панелей; установка реечного потолка;
-										| укладка плитки на пол; монтаж кранов)
 
 				+b.service-item
 					+e.info
@@ -91,43 +68,43 @@ mixin service()
 
 					+e.content
 						+b.service-content
-							+e.H4.title Цены:
+							+e.H4.title Цены (за 1 м ):
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Шпаклёвка стен
+										+e.P.price.m 235.- за м
 
 							+e.item
 								+b.service-content-item
 									+e.info
 										+e.H4.title Окраска стен
-										+e.P.price.m 173.- за м
+										+e.P.price.m 175.- за м
 
 							+e.item
 								+b.service-content-item
 									+e.info
 										+e.H4.title Поклейка обоев
-										+e.P.price.m 173.- за м
-
-							+e.item
-								+b.service-content-item
-									+e.info
-										+e.H4.title Нанесение штукатурки
-										+e.P.price.m 292.- за м
-
-							+e.item
-								+b.service-content-item
-									+e.info
-										+e.H4.title Укладка плитки
-										+e.P.price.m 677.- за м
-
-							+e.item
-								+b.service-content-item
-									+e.info
-										+e.H4.title Укладка ламината
-										+e.P.price.m 292.- за м
+										+e.P.price.m 175.- за м
 
 							+e.item
 								+b.service-content-item
 									+e.info
 										+e.H4.title Наливной пол
-										+e.P.price.m 235.- за м
+										+e.P.price.m 230.- за м
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Укладка плитки
+										+e.P.price.m 680.- за м
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Укладка ламината
+										+e.P.price.m 290.- за м
 
 							+e.item
 								+b.service-content-item
@@ -140,6 +117,18 @@ mixin service()
 									+e.info
 										+e.H4.title Натяжной потолок
 										+e.P.price.m 213.- за м
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Установка ванны
+										+e.P.price.m 2500.- за м
+
+							+e.item
+								+b.service-content-item
+									+e.info
+										+e.H4.title Установка раковины
+										+e.P.price.m 1000- за м
 
 						a.service-btn.base-btn.y-btn(href='')
 							span Посмотреть полный прайс

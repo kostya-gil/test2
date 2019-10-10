@@ -56,8 +56,17 @@
 	padding-x(15px)
 
 	&__title
+		display inline-block
 		font 25px 'GPro-B'
 		margin-bottom 10px
+		position relative
+
+		&:before
+			content '2';
+			position: absolute
+			right 19px
+			top -5px
+			font-size 12px
 
 	&__item
 		margin-top 25px

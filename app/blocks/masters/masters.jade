@@ -1,7 +1,7 @@
 mixin masters()
 	+b.masters&attributes(attributes)
 		.container
-				h2.title Наши мастера
+				h2.title Наша команда
 
 				button.ma-l
 				button.ma-r
@@ -12,8 +12,19 @@ mixin masters()
 								img(src="assets/images/m1.jpg", alt="")
 
 							+e.content
-								+e.H3.title Александр Васильев
-								//- +e.H4.sub-title Мастер отделочных работ
+								+e.H3.title Лучшие работники:
+								+e.H4.sub-title Адреенко Николай электромонтажник, опыт 12 лет
+									br
+									| Штайнбрехер Андрей сантехник, опыт 7 лет
+									br
+									| Шпирер Александр плиточник, опыт 11 лет
+									br
+									| Богатырёва Татьяна маляр, опыт 5 лет
+									br
+									| Самилюк Кирилл отделочник-маляр, опыт 5 лет
+									br
+									| Воробъёв Николай разнорабочий, опыт 3 года
+
 
 								+e.skills
 									+b.master-skill

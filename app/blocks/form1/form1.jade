@@ -4,13 +4,13 @@ mixin form1()
 			+e.container
 				+b.base-form
 					+e.content
-						+e.H2.title Пригласите 
-							span БЕСПЛАТНО 
+						+e.H2.title Закажите
+							span  БЕСПЛАТНУЮ
 							br
-							| прораба-замерщика и он посчитает
+							| оценку стоимости работ
 							br
-							|  Вам смету прямо на объекте 
-							span за 30 мин!
+							|  и наш специалист посчитает ее
+							span  за 30 мин.
 
 						+e.form
 							form(action='' method='post')
@@ -19,9 +19,9 @@ mixin form1()
 								.base-input-wrapper.phone
 									input.base-input(type="tel" name='phone' placeholder='Введите телефон')
 								button.base-btn.y-btn(type='submit')
-									span Пригласить прораба
+									span Заказать оценку стоимости
 
 						+e.P.sign * Оставляя заявку Вы даете
-							| согласие на обработку своих персональных данных. 
+							| согласие на обработку своих персональных данных.
 							br
 							| Ваши данные не будут переданы 3м лицам.
