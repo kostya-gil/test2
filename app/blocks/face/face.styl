@@ -47,9 +47,11 @@
 		padding-x(15px)
 		position: absolute
 		top 50%
-		transform: translate(0, -50%)
 		padding-top 2px
 		font 18px 'GPro-M'
+		width 100%
+		left 50%
+		transform: translate(-50%, -50%)
 
 .face-advan-img-outer
 	width: 94px
@@ -96,6 +98,10 @@
 		margin-x(15px)
 		margin-bottom 70px
 
+	.face__text
+		font-size 17px
+		max-width 320px
+
 +below(790px)
 	.face__title
 		font-size 38px
@@ -115,6 +121,7 @@
 
 		&__text
 			margin-top 15px
+			margin-x(auto)
 
 	.face-content
 		padding-top 150px
@@ -134,10 +141,11 @@
 
 			&__text
 				padding: 0
-				padding-top 10px
+				padding-top 22px
 				width 100%
 				left 0
 				font-size: 14px
+				transform: translate(0, -50%)
 
 	.face
 		text-align: center
