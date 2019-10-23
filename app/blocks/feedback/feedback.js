@@ -8,6 +8,7 @@ export default function feedback() {
 		speed: 300,
 		slidesToShow: 1,
 		slidesToScroll: 1,
+		adaptiveHeight: true,
 		prevArrow: $('.fa-l'),
 		nextArrow: $('.fa-r')
 	});

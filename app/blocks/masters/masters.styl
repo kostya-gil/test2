@@ -34,7 +34,7 @@
 	justify-content space-between
 
 	&__img
-		max-width 450px
+		max-width 550px
 		width 100%
 		flex-shrink: 0
 
@@ -48,13 +48,33 @@
 		color #f1ab08
 
 	&__sub-title
-		margin-top 35px
-		line-height: 2.2
-		font 18px 'GPro-R'
+		margin-top 25px
 
-		span
+		.text:before
+			content: ''
+			position absolute
+			top 50%
+			left 0
+			transform translate(0, -50%)
+			size(18px)
+			background: #F1AB08
+			border-radius: 50%
+
+		.text
 			display block
-			margin-top 7px
+			margin-top 11px
+			position relative
+			padding-left: 35px
+
+			.titl
+				font 18px 'GPro-B'
+
+			.pos
+				font 18px 'GPro-R'
+
+			.ex
+				font 18px 'GPro-R'
+				font-style: italic
 
 	&__skills
 		margin-top 25px
