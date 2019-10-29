@@ -105,7 +105,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="form1">
+		<div id="scrl-form" class="form1">
 			<div class="container">
 				<div class="form1__container">
 					<div class="base-form">
@@ -113,7 +113,8 @@
 							<h2 class="base-form__title">Закажите<span> БЕСПЛАТНУЮ</span><br />оценку стоимости
 								работ<br /> и наш специалист посчитает ее<span> за 30 мин.</span></h2>
 							<div class="base-form__form">
-								<form action="" method="post">
+								<form action="" method="post"><input type="hiddden" name="form"
+									 value="Оценка стоимости" />
 									<div class="base-input-wrapper name"><input type="text" name="name"
 										 placeholder="Ваше имя" class="base-input" /></div>
 									<div class="base-input-wrapper phone"><input type="tel" name="phone"
@@ -287,66 +288,23 @@
 				<div class="calc-form">
 					<div class="calc-form__top-part">
 						<h2 class="calc-form__title">Калькулятор ремонта</h2>
-						<div class="calc-form__type"><a href="#" data-type="room"
-							 class="base-btn type-btn active"><span>Комната</span></a><a href="#" data-type="flat"
-							 class="base-btn type-btn"><span>Квартира</span></a><a href="#" data-type="newbuild"
-							 class="base-btn type-btn"><span>Новостройка</span></a></div>
-						<div data-type="room" class="calc-form__content-top active">
+						<div data-type="flat" class="calc-form__content-top active">
 							<div class="calc-form__fields">
-								<div class="calc-input select-input base-input"><select
-									 data-placeholder="Жилая комнтата" class="base-input select">
-										<option value="Жилая комнтата">Жилая комнтата</option>
-										<option value="Жилая комнтата 2">Жилая комнтата 2</option>
-										<option value="Жилая комнтата 3">Жилая комнтата 3</option>
-									</select></div><input type="text" placeholder="Введите метраж"
-								 class="base-input calc-input ni" />
-								<div class="calc-input select-input base-input"><select
-									 data-placeholder="Косметический ремонт" class="base-input select">
-										<option value="Косметический ремонт 1">Косметический ремонт</option>
-										<option value="Косметический ремонт 2">Косметический ремонт 2</option>
-										<option value="Косметический ремонт 3">Косметический ремонт 4</option>
+								<div class="calc-input select-input base-input"><select name="build" required="required"
+									 data-placeholder="Комната" for="calc1" class="base-input select">
+										<option value="Комната">Комната</option>
+										<option value="Квартира">Квартира</option>
+										<option value="Дом">Дом</option>
 									</select></div>
-								<p class="calc-form__sign"><span>Косметический ремонт</span>- ремонт, предполагающий
-									выполнение
-									демонтажных и чистовых работ помещения
-									(без выравнивания стен).</p>
-							</div>
-						</div>
-						<div data-type="flat" class="calc-form__content-top">
-							<div class="calc-form__fields">
-								<div class="calc-input select-input base-input"><select
-									 data-placeholder="Жилая квартира" class="base-input select">
-										<option value="Жилая комнтата">Жилая квартира</option>
-										<option value="Жилая комнтата 2">Жилая квартира 2</option>
-										<option value="Жилая комнтата 3">Жилая квартира 3</option>
-									</select></div><input type="text" placeholder="Введите метраж"
-								 class="base-input calc-input ni" />
-								<div class="calc-input select-input base-input"><select
-									 data-placeholder="Косметический квартира" class="base-input select">
-										<option value="Косметический ремонт 1">Косметический квартира</option>
-										<option value="Косметический ремонт 2">Косметический квартира 2</option>
-										<option value="Косметический ремонт 3">Косметический квартира 4</option>
-									</select></div>
-								<p class="calc-form__sign"><span>Косметический ремонт</span>- ремонт, предполагающий
-									выполнение
-									демонтажных и чистовых работ помещения
-									(без выравнивания стен).</p>
-							</div>
-						</div>
-						<div data-type="newbuild" class="calc-form__content-top">
-							<div class="calc-form__fields">
-								<div class="calc-input select-input base-input"><select
-									 data-placeholder="Жилая строение" class="base-input select">
-										<option value="Жилая комнтата">Жилая строение</option>
-										<option value="Жилая комнтата 2">Жилая кстроение 2</option>
-										<option value="Жилая комнтата 3">Жилая строение 3</option>
-									</select></div><input type="text" placeholder="Введите метраж"
-								 class="base-input calc-input ni" />
-								<div class="calc-input select-input base-input"><select
-									 data-placeholder="Косметический строение" class="base-input select">
-										<option value="Косметический ремонт 1">Косметический строение</option>
-										<option value="Косметический ремонт 2">Косметический строение 2</option>
-										<option value="Косметический ремонт 3">Косметический строение 4</option>
+								<div class="ni-wrapper"><input type="number" name="metr" required="required"
+									 placeholder="Введите метраж" value="1" for="calc1"
+									 class="base-input calc-input ni" /></div>
+								<div class="calc-input select-input base-input"><select name="type"
+									 data-placeholder="Косметический квартира" required="required" for="calc1"
+									 class="base-input select type-select">
+										<option value="Косметический">Косметический</option>
+										<option value="Капитальный">Капитальный</option>
+										<option value="Ремонт под ключ">Ремонт под ключ</option>
 									</select></div>
 								<p class="calc-form__sign"><span>Косметический ремонт</span>- ремонт, предполагающий
 									выполнение
@@ -361,60 +319,22 @@
 								<div class="calc-form__prices">
 									<div class="type-price">
 										<h4 class="type-price__title">Стоимость<br />ремонта:</h4>
-										<p class="type-price__price">17 880.-</p>
-									</div>
-									<div class="type-price">
-										<h4 class="type-price__title">Стоимость черновых<br />материалов:</h4>
-										<p class="type-price__price">1 073.-</p>
+										<p id="end-price" class="type-price__price">1490 .-</p>
 									</div>
 									<div class="type-price">
 										<h4 class="type-price__title">Примерные<br />сроки ремонта:</h4>
-										<p class="type-price__price">4 дня</p>
+										<p class="type-price__price">Дней:<span id="days"> 0</span></p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div data-type="flat" class="calc-form__content-bottom">
-							<div class="calc-form__bottom-part">
-								<div class="calc-form__prices">
-									<div class="type-price">
-										<h4 class="type-price__title">Стоимость<br />ремонта:</h4>
-										<p class="type-price__price">17 880.-</p>
-									</div>
-									<div class="type-price">
-										<h4 class="type-price__title">Стоимость черновых<br />материалов:</h4>
-										<p class="type-price__price">1 073.-</p>
-									</div>
-									<div class="type-price">
-										<h4 class="type-price__title">Примерные<br />сроки ремонта:</h4>
-										<p class="type-price__price">4 дня</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div data-type="newbuild" class="calc-form__content-bottom">
-							<div class="calc-form__bottom-part">
-								<div class="calc-form__prices">
-									<div class="type-price">
-										<h4 class="type-price__title">Стоимость<br />ремонта:</h4>
-										<p class="type-price__price">17 880.-</p>
-									</div>
-									<div class="type-price">
-										<h4 class="type-price__title">Стоимость черновых<br />материалов:</h4>
-										<p class="type-price__price">1 073.-</p>
-									</div>
-									<div class="type-price">
-										<h4 class="type-price__title">Примерные<br />сроки ремонта:</h4>
-										<p class="type-price__price">4 дня</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<form action="" method="post"><input type="hidden" name="typecalc" id="typecalc" />
-							<div class="calc-form__form">
+						<form action="" method="post" id="calc1">
+							<div class="calc-form__form"><input type="hiddden" name="form"
+								 value="Калькулятор расчета" />
 								<div class="calc-input base-input-wrapper phone"><input type="tel" name="phone"
-									 placeholder="Введите телефон" class="base-input" /></div><button type="submit"
-								 class="base-btn y-btn calc-input"><span>Пригласить специалиста</span></button>
+									 placeholder="Введите телефон" required="required" class="base-input" /></div>
+								<button type="submit" class="base-btn y-btn calc-input"><span>Пригласить
+										специалиста</span></button>
 							</div>
 						</form>
 					</div>
@@ -519,24 +439,25 @@
 			<div class="container">
 				<div class="base-form">
 					<div class="base-form__content">
-						<h2 class="base-form__title"><span>Получите</span>примерный<span>расчет
-								ремонта</span><br />Вашего помещения</h2>
+						<h2 class="base-form__title"><span>Получите</span> примерный<span> расчет ремонта</span><br />
+							Вашего помещения</h2>
 						<div class="base-form__form">
-							<form action="" method="post">
+							<form action="" method="post"><input type="hiddden" name="form" value="Примерный расчет" />
 								<div class="form2-wrapper">
-									<div class="calc-input select-input base-input"><select
+									<div class="calc-input select-input base-input"><select name="build"
 										 data-placeholder="Вид помещения" class="base-input select">
 											<option value="Квартира">Квартира</option>
 											<option value="Комната">Комната</option>
 											<option value="Дом">Дом</option>
 										</select></div>
-									<div class="calc-input select-input base-input"><select
+									<div class="calc-input select-input base-input"><select name="type"
 										 data-placeholder="Тип ремонта" class="base-input select">
 											<option value="Капитальный">Капитальный</option>
 											<option value="Косметический">Косметический</option>
 											<option value=" Под ключ"> Под ключ</option>
-										</select></div><input type="text" placeholder="Введите метраж"
-									 class="base-input calc-input ni" />
+										</select></div>
+									<div class="ni-wrapper"><input type="number" name="metr" required="required"
+										 placeholder="Введите метраж" class="base-input calc-input ni" /></div>
 									<div class="base-input-wrapper phone"><input type="tel" name="phone"
 										 placeholder="Введите телефон" class="base-input" /></div>
 								</div><button type="submit" class="base-btn y-btn"><span>Получить расчет</span></button>
@@ -630,7 +551,8 @@
 							<div class="schema-item__content">
 								<h3 class="schema-item__title">Звонок или<br />Заявка</h3>
 								<p class="schema-item__text">консультация по услугам и материалу</p><a href="#"
-								 data-link="form1" class="schema-item__btn base-btn scrl-btn y-btn"><span>Оставить
+								 data-link="form1"
+								 class="schema-item__btn base-btn scrl-btn y-btn scrl-btn"><span>Оставить
 										заявку</span></a>
 							</div>
 						</div>
@@ -829,8 +751,16 @@
 							</div>
 							<div class="map-item">
 								<div class="map-item__img"><img src="assets/images/mail.png" alt="" /></div>
-								<h3 class="map-item__title">E-mail:</h3><a href="mailto:novosib@studia-remontov.ru"
-								 class="map-item__text">novosib@studia-remontov.ru</a>
+								<h3 class="map-item__title">E-mail:</h3><a href="mailto:tr3315554@gmail.com"
+								 class="map-item__text">tr3315554@gmail.com</a>
+							</div>
+							<div class="map-item">
+								<div class="map-item__img"></div>
+								<h3 class="map-item__title">Социальные сети:</h3>
+								<div class="map-item__social"><a href="https://vk.com/public187939897" target="_blank"
+									 rel="noopener">https://vk.com/public187939897</a><a
+									 href="https://www.facebook.com/groups/2491444784507513/" target="_blank"
+									 rel="noopener">https://www.facebook.com/groups/2491444784507513/</a></div>
 							</div>
 						</div>
 					</div>
@@ -847,19 +777,13 @@
 						 class="nav__link">Мастера</a><a href="#" data-link="calc" class="nav__link">Калькулятор</a><a
 						 href="#" data-link="credit" class="nav__link">Рассрочка</a><a href="#" data-link="feedback"
 						 class="nav__link">Отзывы</a><a href="#" data-link="map" class="nav__link">Контакты</a></nav><a
-					 href="/" class="footer__btn base-btn y-btn"><span>Обратный звонок</span></a>
+					 href="#" data-link="form1" class="footer__btn base-btn y-btn scrl-btn"><span>Обратный
+							звонок</span></a>
 				</div>
 				<div class="footer-info">
 					<p class="footer-info__item">© 2019 ООО «Студия Ремонтов»</p>
 					<p class="footer-info__item">ИНН: 7743152366, ОГРН: 1167746404517</p>
 					<p class="footer-info__item">Сайт не является публичной офертой и носит информационный характер.</p>
-				</div>
-				<div class="footer-social">
-					<div class="footer-social__item"><img src="assets/images/001-vk-social-logotype.svg" alt="" /></div>
-					<div class="footer-social__item"><img src="assets/images/001-vk-social-logotype.svg" alt="" /></div>
-					<div class="footer-social__item"><img src="assets/images/001-vk-social-logotype.svg" alt="" /></div>
-					<div class="footer-social__item"><img src="assets/images/001-vk-social-logotype.svg" alt="" /></div>
-					<div class="footer-social__item"><img src="assets/images/001-vk-social-logotype.svg" alt="" /></div>
 				</div>
 			</div>
 		</footer>

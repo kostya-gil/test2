@@ -6,72 +6,21 @@ mixin calc()
 				+e.top-part
 					+e.H2.title Калькулятор ремонта
 
-					+e.type
-						a.base-btn.type-btn.active(href="#" data-type='room')
-							span Комната
-
-						a.base-btn.type-btn(href="#" data-type='flat')
-							span Квартира
-
-						a.base-btn.type-btn(href="#" data-type='newbuild')
-							span Новостройка
-
-					+e.content-top.active(data-type='room')
+					+e.content-top.active(data-type='flat')
 						+e.fields
 							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Жилая комнтата')
-									option(value='Жилая комнтата') Жилая комнтата
-									option(value='Жилая комнтата 2') Жилая комнтата  2
-									option(value='Жилая комнтата 3') Жилая комнтата 3
-							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
+								select.base-input.select(name='build' required data-placeholder='Комната' for='calc1')
+									option(value='Комната') Комната
+									option(value='Квартира') Квартира
+									option(value='Дом') Дом
+							.ni-wrapper
+								input.base-input.calc-input.ni(type="number" name='metr' required placeholder='Введите метраж' value='1' for='calc1')
 
 							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Косметический ремонт')
-									option(value='Косметический ремонт 1') Косметический ремонт
-									option(value='Косметический ремонт 2') Косметический ремонт 2
-									option(value='Косметический ремонт 3') Косметический ремонт 4
-
-							+e.P.sign
-								span Косметический ремонт
-								| - ремонт, предполагающий выполнение
-								| демонтажных и чистовых работ помещения
-								| (без выравнивания стен).
-
-					+e.content-top(data-type='flat')
-						+e.fields
-							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Жилая квартира')
-									option(value='Жилая комнтата') Жилая квартира
-									option(value='Жилая комнтата 2') Жилая квартира  2
-									option(value='Жилая комнтата 3') Жилая квартира 3
-							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
-
-							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Косметический квартира')
-									option(value='Косметический ремонт 1') Косметический квартира
-									option(value='Косметический ремонт 2') Косметический квартира 2
-									option(value='Косметический ремонт 3') Косметический квартира 4
-
-							+e.P.sign
-								span Косметический ремонт
-								| - ремонт, предполагающий выполнение
-								| демонтажных и чистовых работ помещения
-								| (без выравнивания стен).
-
-					+e.content-top(data-type='newbuild')
-						+e.fields
-							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Жилая строение')
-									option(value='Жилая комнтата') Жилая строение
-									option(value='Жилая комнтата 2') Жилая кстроение  2
-									option(value='Жилая комнтата 3') Жилая строение 3
-							input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
-
-							.calc-input.select-input.base-input
-								select.base-input.select(data-placeholder='Косметический строение')
-									option(value='Косметический ремонт 1') Косметический строение
-									option(value='Косметический ремонт 2') Косметический строение 2
-									option(value='Косметический ремонт 3') Косметический строение 4
+								select.base-input.select.type-select(name='type' data-placeholder='Косметический квартира' required for='calc1')
+									option(value='Косметический') Косметический
+									option(value='Капитальный') Капитальный
+									option(value='Ремонт под ключ') Ремонт под ключ
 
 							+e.P.sign
 								span Косметический ремонт
@@ -88,75 +37,29 @@ mixin calc()
 										br
 										| ремонта:
 
-									+e.P.price 17 880.-
+									+e.P.price#end-price 1490 .-
 
-								+b.type-price
-									+e.H4.title Стоимость черновых
-										br
-										| материалов:
+								//- +b.type-price
+								//- 	+e.H4.title Стоимость черновых
+								//- 		br
+								//- 		| материалов:
 
-									+e.P.price 1 073.-
-
-								+b.type-price
-									+e.H4.title Примерные
-										br
-										| сроки ремонта:
-
-									+e.P.price 4 дня
-
-					+e.content-bottom(data-type='flat')
-						+e.bottom-part
-							+e.prices
-								+b.type-price
-									+e.H4.title Стоимость
-										br
-										| ремонта:
-
-									+e.P.price 17 880.-
-
-								+b.type-price
-									+e.H4.title Стоимость черновых
-										br
-										| материалов:
-
-									+e.P.price 1 073.-
+								//- 	+e.P.price от
+								//- 		span#base-price  1 073.-
 
 								+b.type-price
 									+e.H4.title Примерные
 										br
 										| сроки ремонта:
 
-									+e.P.price 4 дня
+									+e.P.price Дней:
+										span#days  0
 
-					+e.content-bottom(data-type='newbuild')
-						+e.bottom-part
-							+e.prices
-								+b.type-price
-									+e.H4.title Стоимость
-										br
-										| ремонта:
-
-									+e.P.price 17 880.-
-
-								+b.type-price
-									+e.H4.title Стоимость черновых
-										br
-										| материалов:
-
-									+e.P.price 1 073.-
-
-								+b.type-price
-									+e.H4.title Примерные
-										br
-										| сроки ремонта:
-
-									+e.P.price 4 дня
-
-					form(action="" method='post')
-						input(type="hidden" name='typecalc' id='typecalc')
+					form(action="" method='post' id="calc1")
 						+e.form
+							input(type="hiddden" name="form" value="Калькулятор расчета")
 							.calc-input.base-input-wrapper.phone
-								input.base-input(type="tel" name='phone' placeholder='Введите телефон')
+								input.base-input(type="tel" name='phone' placeholder='Введите телефон' required)
 							button.base-btn.y-btn.calc-input(type='submit')
 								span Пригласить специалиста
 

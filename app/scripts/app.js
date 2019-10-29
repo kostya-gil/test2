@@ -46,10 +46,4 @@ $(() => {
 	}
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-	setInterval(function () {
-		$('.select').chosen({ no_results_text: 'Нет совпадений' });
-	}, 1000);
-});
-
 

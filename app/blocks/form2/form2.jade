@@ -5,27 +5,29 @@ mixin form2()
 				+e.content
 						+e.H2.title
 							span Получите
-							| примерный
-							span расчет ремонта
+							|  примерный
+							span  расчет ремонта
 							br
-							| Вашего помещения
+							|  Вашего помещения
 
 						+e.form
 							form(action='' method='post')
+								input(type="hiddden" name="form" value="Примерный расчет")
 								.form2-wrapper
 									.calc-input.select-input.base-input
-										select.base-input.select(data-placeholder='Вид помещения')
+										select.base-input.select(name='build' data-placeholder='Вид помещения')
 											option(value='Квартира') Квартира
 											option(value='Комната') Комната
 											option(value='Дом') Дом
 
 									.calc-input.select-input.base-input
-										select.base-input.select(data-placeholder='Тип ремонта')
+										select.base-input.select(name='type' data-placeholder='Тип ремонта')
 											option(value='Капитальный') Капитальный
 											option(value='Косметический') Косметический
 											option(value=' Под ключ')  Под ключ
 
-									input.base-input.calc-input.ni(type="text" placeholder='Введите метраж')
+									.ni-wrapper
+										input.base-input.calc-input.ni(type="number" name='metr' required placeholder='Введите метраж')
 
 									.base-input-wrapper.phone
 										input.base-input(type="tel" name='phone' placeholder='Введите телефон')

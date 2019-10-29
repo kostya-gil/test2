@@ -1,5 +1,5 @@
 mixin form1()
-	+b.form1&attributes(attributes)
+	+b.form1#scrl-form&attributes(attributes)
 		.container
 			+e.container
 				+b.base-form
@@ -14,6 +14,7 @@ mixin form1()
 
 						+e.form
 							form(action='' method='post')
+								input(type="hiddden" name="form" value="Оценка стоимости")
 								.base-input-wrapper.name
 									input.base-input(type="text" name='name' placeholder='Ваше имя')
 								.base-input-wrapper.phone
