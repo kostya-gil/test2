@@ -1,0 +1,19 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/footer/footer
+include /blocks/portfolio/portfolio
+include /blocks/scripts/scripts
+
+block head
+	- var pageTitle = 'CSSSR Project Template';
+
+block content
+	+header
+	+portfolio
+	+footer
+	+scripts([
+			'app.min.js',
+			'vendor.js',
+			'portfolio.min.js'
+	])

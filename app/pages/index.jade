@@ -19,6 +19,7 @@ include /blocks/header/header
 include /blocks/footer/footer
 include /blocks/principles/principles
 include /blocks/calc/calc
+include /blocks/scripts/scripts
 
 block head
 	- var pageTitle = 'CSSSR Project Template';
@@ -43,3 +44,7 @@ block content
 	+feedback
 	+map
 	+footer
+	+scripts([
+			'//api-maps.yandex.ru/2.1/?lang=ru_RU',
+			'app.min.js'
+	])

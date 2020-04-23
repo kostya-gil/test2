@@ -1,0 +1,171 @@
+.portfolio-content
+	padding-top 119px
+	background url(../images/face.png) no-repeat bottom right
+	background-attachment fixed
+	background-size 150%
+	height 420px
+	text-align center
+	padding-left 15px
+	padding-right 15px
+
+.portfolio-content-container
+	display flex
+	height 80%
+
+.p-title
+	margin auto
+	font 40px 'GPro-B'
+
+	span 
+		color: #f1ab08
+
+.portfolio
+	padding-y(50px)
+	text-align center
+
+.portfolio-container
+	margin-top: 50px
+	display: flex
+	justify-content: center
+	align-items: flex-start
+
+.p-item
+	max-width: 600px
+	width 100%
+	margin-x(15px)
+	margin-bottom 10px
+	position relative
+	cursor pointer
+		
+.p-item-decor
+	position: absolute
+	top: 5px
+	left: 5px
+	right: 5px
+	bottom: 5px
+	z-index 20
+	border 3px solid #f1ab08
+
+.p-item-logo
+	position absolute
+	bottom: 0px
+	right: 0px
+	background: url(../images/logo-mini.png) no-repeat
+	width: 100px
+	height: 52px
+
+.p-item-cover
+	opacity 0
+	position absolute
+	top 0
+	left 0
+	right 0
+	bottom 0
+	background rgba(0,0,0,0.702)
+	z-index 100
+	display flex
+	transition all 0.5s ease
+
+.p-item-plus
+	margin: 5px auto
+	display block
+	font-size: 35px
+	color: #f1ab08
+
+.p-item-content
+	width 100%
+	margin auto
+	padding-x(15px)
+
+.p-item-title
+	font 16px 'GPro-R'
+	color white
+
+.p-item:hover
+	.p-item-cover
+		opacity: 1
+
+.remodal
+	background: #f5eeee
+
+.remodal-close
+	left auto
+	right: 0
+	color #f1ab08
+
+.remodal-close:before
+	font-size: 35px
+
+.modal-info
+	max-width: 1100px !important
+	width: 100%
+	padding: 40px 0 30px
+
+.modal-info-content
+	max-width 770px
+	width 100%
+	margin auto
+
+.modal-title
+	font 24px 'GPro-B'
+	color black
+	position relative
+
+	&:after
+		content ''
+		position absolute
+		bottom -7px
+		left 50%
+		transform translateX(-50%)
+		width 90px
+		height 2px
+		background #f1ab08
+
+.modal-slider
+	margin-top: 30px
+	position relative
+
+.modal-img img
+	margin-x(auto)
+
+.modal-sl
+	max-width 600px
+	width: 100%
+	margin-x(auto)
+
+.modal-desc
+	margin-top: 20px
+	text-align: left
+
+.modal-desc-sub
+	margin-top: 12px
+	font 18px 'GPro-B'
+
+	&::before
+		left: 0
+		width: 30px
+		height: 2px
+
+.modal-desc-d
+	margin-top: 12px
+	font 16px 'GPro-R'
+
+.modal-features
+	margin-top: 30px
+
+.modal-feature
+	width 100%
+	display flex
+	justify-content space-between
+	align-items center
+	border-bottom 1px solid #d6d6d6
+	height 50px
+	text-align left
+
+.mf-l
+	font 17px 'GPro-R'
+	color #f1ab08
+
+.mf-r
+	width 215px
+	font 17px 'GPro-R'

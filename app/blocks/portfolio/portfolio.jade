@@ -1,0 +1,99 @@
+mixin portfolio()
+	.portfolio-content
+		.portfolio-content-container
+			h1.p-title Выполненные 
+				span заказы
+
+	+b.portfolio&attributes(attributes)
+		.container
+			.portfolio-container
+				+b.p-item
+					.p-item-logo
+					.p-item-img
+						img(src="assets/images/face.png", alt="")
+					.p-item-decor
+
+					a.p-item-cover(href="javascript:void(0)" data-remodal-target="modal")
+						.p-item-content
+							span.p-item-title Пример заголовка
+							span.p-item-plus +
+
+				+b.p-item
+					.p-item-logo
+					.p-item-img
+						img(src="assets/images/face.png", alt="")
+					.p-item-decor
+
+					a.p-item-cover(href="javascript:void(0)" data-remodal-target="modal")
+						.p-item-content
+							span.p-item-title Пример заголовка
+							span.p-item-plus +
+
+	+b.form1
+		.container
+			+e.container
+				+b.base-form
+					+e.content
+						+e.H2.title Вам понравилась работа?
+						+e.H3.title Если да, закажите
+							span  БЕСПЛАТНУЮ
+							br
+							| консультацию - обсудим детали
+
+						+e.form
+							form(action='' method='post')
+								input(type="hiddden" name="form" value="Консультация")
+								.base-input-wrapper.name
+									input.base-input(type="text" name='name' required placeholder='Ваше имя')
+								.base-input-wrapper.phone
+									input.base-input(type="tel" name='phone' required placeholder='Введите телефон')
+								button.base-btn.y-btn(type='submit')
+									span Заказать консультацию
+
+						+e.P.sign * Оставляя заявку Вы даете
+							| согласие на обработку своих персональных данных.
+							br
+							| Ваши данные не будут переданы 3м лицам.
+
+
+		.remodal.modal-info(data-remodal-id='modal')
+			button.remodal-close(data-remodal-action='close')
+			.modal-info-content
+				h2.modal-title Пример заголовка
+				.modal-slider
+					button.fa-l
+					button.fa-r
+
+					.modal-sl
+						.slider-item
+							.modal-img
+								img(src="assets/images/rv1.jpg", alt="")
+
+						.slider-item
+							.modal-img
+								img(src="assets/images/rv4.jpg", alt="")
+
+				.modal-features
+					.modal-feature
+						.mf-l Адрес
+						.mf-r г. Новосибирск
+
+					.modal-feature
+						.mf-l Сроки работы
+						.mf-r 100 дней
+
+					.modal-feature
+						.mf-l Стоимость
+						.mf-r Бесценно
+
+					.modal-feature
+						.mf-l Метраж
+						.mf-r 100 м2
+
+				.modal-desc
+					h3.title.modal-desc-sub Отзыв 1
+					.modal-desc-d Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem voluptate fuga fugiat optio. Deserunt aperiam doloribus debitis nihil deleniti sit eveniet perspiciatis dicta animi ea corrupti, itaque vitae alias!
+
+				.modal-desc
+					h3.title.modal-desc-sub Отзыв 2
+					.modal-desc-d Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem voluptate fuga fugiat optio. Deserunt aperiam doloribus debitis nihil deleniti sit eveniet perspiciatis dicta animi ea corrupti, itaque vitae alias!
