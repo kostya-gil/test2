@@ -1,6 +1,6 @@
 .portfolio-content
 	padding-top 119px
-	background url(../images/face.png) no-repeat bottom right
+	background url(../images/face.png) no-repeat center right
 	background-attachment fixed
 	background-size 150%
 	height 420px
@@ -10,14 +10,14 @@
 
 .portfolio-content-container
 	display flex
-	height 80%
+	height 100%
 
 .p-title
 	margin auto
 	font 40px 'GPro-B'
 
 	span 
-		color: #f1ab08
+		color: #ef9d07
 
 .portfolio
 	padding-y(50px)
@@ -28,9 +28,10 @@
 	display: flex
 	justify-content: center
 	align-items: flex-start
+	flex-wrap wrap
 
 .p-item
-	max-width: 600px
+	max-width: 500px
 	width 100%
 	margin-x(15px)
 	margin-bottom 10px
@@ -105,6 +106,7 @@
 	max-width 770px
 	width 100%
 	margin auto
+	padding 0 15px
 
 .modal-title
 	font 24px 'GPro-B'
@@ -165,7 +167,26 @@
 .mf-l
 	font 17px 'GPro-R'
 	color #f1ab08
+	min-width 215px
 
 .mf-r
 	width 215px
 	font 17px 'GPro-R'
+
+
++below(780px)
+	.p-title
+		margin auto
+		font 32px 'GPro-B'
+
++below(415px)
+	.mf-l
+		min-width: auto
+		font 14px 'GPro-R'
+
+	.mf-r
+		width auto
+		font 14px 'GPro-R'
+
+	.modal-desc-d
+		font 14px 'GPro-R'
