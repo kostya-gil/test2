@@ -1,7 +1,7 @@
 mixin portfolio()
 	.portfolio-content
 		.portfolio-content-container
-			h1.p-title Выполненные 
+			h1.p-title Выполненные
 				span заказы
 
 	+b.portfolio&attributes(attributes)
@@ -10,23 +10,23 @@ mixin portfolio()
 				+b.p-item
 					.p-item-logo
 					.p-item-img
-						img(src="assets/images/face.png", alt="")
+						img(src="assets/images/portfolio/1.1.png", alt="")
 					.p-item-decor
 
-					a.p-item-cover(href="javascript:void(0)" data-remodal-target="modal")
+					a.p-item-cover(href="javascript:void(0)" data-remodal-target="modal1")
 						.p-item-content
-							span.p-item-title Пример заголовка
+							span.p-item-title Ремонт с. Раздольное
 							span.p-item-plus +
 
 				+b.p-item
 					.p-item-logo
 					.p-item-img
-						img(src="assets/images/face.png", alt="")
+						img(src="assets/images/portfolio/2.2.png", alt="")
 					.p-item-decor
 
-					a.p-item-cover(href="javascript:void(0)" data-remodal-target="modal")
+					a.p-item-cover(href="javascript:void(0)" data-remodal-target="modal2")
 						.p-item-content
-							span.p-item-title Пример заголовка
+							span.p-item-title Ремонт Выборная 144/1
 							span.p-item-plus +
 
 	+b.form1
@@ -56,10 +56,10 @@ mixin portfolio()
 							| Ваши данные не будут переданы 3м лицам.
 
 
-		.remodal.modal-info(data-remodal-id='modal')
+		.remodal.modal-info(data-remodal-id='modal1')
 			button.remodal-close(data-remodal-action='close')
 			.modal-info-content
-				h2.modal-title Пример заголовка
+				h2.modal-title Ремонт с. Раздольное
 				.modal-slider
 					button.fa-l
 					button.fa-r
@@ -67,34 +67,31 @@ mixin portfolio()
 					.modal-sl
 						.slider-item
 							.modal-img
-								img(src="assets/images/rv1.jpg", alt="")
+								img(src="assets/images/portfolio/1.1.png", alt="")
 
 						.slider-item
 							.modal-img
-								img(src="assets/images/rv4.jpg", alt="")
+								img(src="assets/images/portfolio/1.2.png", alt="")
 
 				.modal-features
 					.modal-feature
 						.mf-l Адрес
-						.mf-r г. Новосибирск
+						.mf-r с. Раздольное
 
 					.modal-feature
 						.mf-l Сроки работы
-						.mf-r 100 дней
+						.mf-r 7 дней
 
 					.modal-feature
 						.mf-l Стоимость
-						.mf-r Бесценно
+						.mf-r 56000 руб
 
 					.modal-feature
 						.mf-l Метраж
 						.mf-r.m
-							span 100 м
+							span 24 м
 
 				.modal-desc
-					h3.title.modal-desc-sub Отзыв 1
-					.modal-desc-d Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem voluptate fuga fugiat optio. Deserunt aperiam doloribus debitis nihil deleniti sit eveniet perspiciatis dicta animi ea corrupti, itaque vitae alias!
+					h3.title.modal-desc-sub Отзыв
+					.modal-desc-d Уже не первый раз заказываем ремонт у Евгения и всегда очень довольны!) В этот раз был необходим ремонт сан узла у родителей. Хотелось бы отдельно поблагодарить за скорость! За неделю сделали нам конфетку))) Ребята всегда очень вежливые, учтут любое Ваше пожелание, даже если Вы толком его объяснить не можете))))) Спасибо большое еще раз, за оперативность, точность и качество!!)
 
-				.modal-desc
-					h3.title.modal-desc-sub Отзыв 2
-					.modal-desc-d Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi exercitationem voluptate fuga fugiat optio. Deserunt aperiam doloribus debitis nihil deleniti sit eveniet perspiciatis dicta animi ea corrupti, itaque vitae alias!
