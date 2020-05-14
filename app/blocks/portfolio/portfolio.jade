@@ -29,6 +29,27 @@ mixin portfolio()
 							span.p-item-title Ремонт Выборная 144/1
 							span.p-item-plus +
 
+				.p-item
+					.p-item-logo
+					.p-item-img
+						img(src='assets/images/portfolio/3.2.png', alt='')
+					.p-item-decor
+					a.p-item-cover(href='javascript:void(0)', data-remodal-target='modal3')
+						.p-item-content
+							span.p-item-title Ремонт с Учхоз
+							span.p-item-plus +
+
+				.p-item
+					.p-item-logo
+					.p-item-img
+						img(src='assets/images/portfolio/4.3.png', alt='')
+					.p-item-decor
+					a.p-item-cover(href='javascript:void(0)', data-remodal-target='modal4')
+						.p-item-content
+							span.p-item-title Ремонт с Ленинское
+							span.p-item-plus +
+
+
 	+b.form1
 		.container
 			+e.container
@@ -95,3 +116,114 @@ mixin portfolio()
 					h3.title.modal-desc-sub Отзыв
 					.modal-desc-d Уже не первый раз заказываем ремонт у Евгения и всегда очень довольны!) В этот раз был необходим ремонт сан узла у родителей. Хотелось бы отдельно поблагодарить за скорость! За неделю сделали нам конфетку))) Ребята всегда очень вежливые, учтут любое Ваше пожелание, даже если Вы толком его объяснить не можете))))) Спасибо большое еще раз, за оперативность, точность и качество!!)
 
+		.remodal.modal-info(data-remodal-id='modal2')
+			button.remodal-close(data-remodal-action='close')
+			.modal-info-content
+				h2.modal-title Ремонт Выборная 144/1
+				.modal-slider
+					button.fa-l
+					button.fa-r
+					.modal-sl
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/2.1.png', alt='')
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/2.2.png', alt='')
+				.modal-features
+					.modal-feature
+						.mf-l Адрес
+						.mf-r Выборная 144/1
+					.modal-feature
+						.mf-l Сроки работы
+						.mf-r 14 дней
+					.modal-feature
+						.mf-l Стоимость
+						.mf-r 156000 руб
+					.modal-feature
+						.mf-l Метраж
+						.mf-r.m
+							span 38 м
+				.modal-desc
+					h3.title.modal-desc-sub Отзыв
+					.modal-desc-d
+						| При начале ремонта квартиры, мы не могли определиться с выбором компании.
+						| Решили остановиться и сделали свой выбор в пользу компании "Территории ремонта".
+						| Оставили заявку на официальном сайте компании, в течение дня нам перезвонили, и мы договорились о времени приезда прораба.
+						| Все замеры и расчеты были сделаны качественно, после чего приняли решение заключить Договор с компанией на ремонт квартиры.
+						| За время проведения ремонтных работ сотрудники данной компании проявляли себя только с положительной стороны.
+						| Все возникающие вопросы с нашей стороны в ходе работы решались быстро и качественно.
+						| Доброжелательное отношение и профессионализм всех специалистов, работающих на нашем объекте,
+						| показались нам верным решением в выборе данной компании. Все работы были выполнены в полном объеме и
+						| своевременно, в соответствии с Договором. По итогам работ, мы полностью удовлетворены и будем рекомендовать Вашу компанию.
+						| Благодарю компанию "Территория ремонта". Огромное Вам спасибо.
+						
+		.remodal.modal-info(data-remodal-id='modal3')
+			button.remodal-close(data-remodal-action='close')
+			.modal-info-content
+				h2.modal-title Ремонт с Учхоз
+				.modal-slider
+					button.fa-l
+					button.fa-r
+					.modal-sl
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/3.1.png', alt='')
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/3.2.png', alt='')
+				.modal-features
+					.modal-feature
+						.mf-l Адрес
+						.mf-r с Учхоз
+					.modal-feature
+						.mf-l Сроки работы
+						.mf-r 23 дня
+					.modal-feature
+						.mf-l Стоимость
+						.mf-r 180000 руб
+					.modal-feature
+						.mf-l Метраж
+						.mf-r
+							| -/div>
+					.modal-desc
+						h3.title.modal-desc-sub Отзыв
+						.modal-desc-d
+							| Компания "Территория ремонта" зарекомендовала себя надежной и добросовестной строительной компанией. Несмотря на сложность работ, условия по договору были выполнены качественно и в срок. Я искренне благодарен компании "Территория ремонта" за конструктивное сотрудничество, отзывчивость, оперативность принимаемых решений, профессионализм работы с заказом высокой сложности.
+							| Спасибо Вам за новую крышу над головой, было очень приятно сотрудничать с Вами. Хотелось бы пожелать Вам в дальнейшем хороших клиентов.
+							
+		.remodal.modal-info(data-remodal-id='modal4')
+			button.remodal-close(data-remodal-action='close')
+			.modal-info-content
+				h2.modal-title Ремонт с Ленинское
+				.modal-slider
+					button.fa-l
+					button.fa-r
+					.modal-sl
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/4.1.png', alt='')
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/4.2.png', alt='')
+						.slider-item
+							.modal-img
+								img(src='assets/images/portfolio/4.3.png', alt='')
+				.modal-features
+					.modal-feature
+						.mf-l Адрес
+						.mf-r с Ленинское
+					.modal-feature
+						.mf-l Сроки работы
+						.mf-r 42 дня
+					.modal-feature
+						.mf-l Стоимость
+						.mf-r 248000 руб
+					.modal-feature
+						.mf-l Метраж
+						.mf-r
+				.modal-desc
+					h3.title.modal-desc-sub Отзыв
+					.modal-desc-d
+						| Заказывали в компании Территория ремонта отделку дома сайдингом. Понравилась организация работы (с нулевого цикла до ее завершения), профессионализм бригады. Немаловажный, на мой взгляд, фактор - соответствие начального расчета стоимости и реальной стоимости после окончания работ.
+						| Работы были сделать в срок, проделали колоссальный объем работы, качеством мы довольны.
