@@ -14,8 +14,8 @@ mixin header()
 				.menu
 					+b.NAV.nav
 						+e.A.link(href='#' data-link='service') Цены
-						+e.A.link(href='#' data-link='examples') Наши работы
-						+e.A.link(href='.masters' data-link='masters') Мастера
+						+e.A.link(href='/examples.html') Наши работы
+						+e.A.link(href='#' data-link='masters') Мастера
 						+e.A.link(href='#' data-link='calc') Калькулятор
 						+e.A.link(href='#' data-link='credit') Рассрочка
 						+e.A.link(href='#' data-link='feedback') Отзывы
@@ -28,5 +28,3 @@ mixin header()
 				+b.header-info
 					+e.A.phone(href='tel: +73833122872') +7 (383) 312-28-72
 					+e.P.time без выходных 08:00-22:00
-
-
